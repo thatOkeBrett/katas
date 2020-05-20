@@ -1,13 +1,17 @@
-function isosceles(numOfLines){
-  //
-   for(i = 1; i<= numOfLines; i++){
-       for(k+ numOfLines; k>= i; k--){
-           console.log("")
-       }
-       for(j = 1; j <= i; j++){
-         console.log("#");
-         console.log("");  
-       }
-       consolelogIn()
-   } 
+function   triangle(number)
+{
+    for( i = 0; i < number; i++)
+    {
+        str = '';
+        for(j = 1; j < (number - i); j++)
+        {
+             str += ' ';
+        }
+        for( k = 0; k < (2 * i + 1); k++)
+        {
+            str += "#";
+        }
+        console.log(str);
+    }
 }
+triangle(4);
